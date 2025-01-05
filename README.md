@@ -4,7 +4,7 @@
 
  ## About
 
-PimpMyStreamlit extends existing Streamlit elements with more advanced functionality. This is accomplished through additional function parameters and arguments.
+PimpMyStreamlit extends existing Streamlit elements with more advanced functionality. This is realized through additional function parameters and arguments.
 
 For example, `pimpst.data_editor` extends `st.data_editor` to include optional database interfacing, etc.
 
@@ -12,14 +12,19 @@ PimpMyStreamlit currently has ensured compatibility with Streamlit v1.40.0.
 
 ## Usage
 
-Import Streamlit and PimpMyStreamlit modules.
+Install the PimpMyStreamlit package (and ensure Streamlit itself and other dependencies are installed). 
 
 ```
-import streamlit as st
+pip install pimpmystreamlit
+```
+
+Import the module.
+
+```
 import pimpmystreamlit as pimpst
 ```
 
-When calling a Streamlit element, simply replace the module alias `st` with `pimpst` to access the additional functionality.
+When calling a Streamlit element, simply use the module alias `pimpst` instead of `st` to access the additional functionality.
 
 Example:
 
@@ -29,7 +34,7 @@ pimpst.data_editor()
 
 ### Usage Notes
 
-- Although only a few elements are currently "pimpable", `pimpmystreamlit` can still replace any instance of a `streamlit` element. If the element called is not yet included here, the classic Streamlit element will be used under the hood. No stress 🤙
+- Although only a few elements are currently "pimpable", `pimpmystreamlit` can still replace any instance of a `streamlit` element. If the element called is not yet included here, the call will simply default to the classic Streamlit element. No stress 🤙
 - PimpMyStreamlit attempts to enhance aspects of and not replace classic Streamlit. Therefore, instead of forking Streamlit, PimpMyStreamlit works alongside it. This means you can immediately use it with each new Streamlit release, with the caveat that compatibility is not ensured until at least the next PimpMyStreamlit update. For the latest ensured compatible Streamlit version, see the [About](#About) section.
 
 ### Pimped elements

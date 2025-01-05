@@ -1,0 +1,13 @@
+[project]
+name = "pimpmystreamlit"
+# version = "x.x.x"
+dependencies = [
+  "duckdb",
+  "pandas",
+  "psycopg2",
+  "streamlit",
+]
+description = "PimpMyStreamlit extends existing Streamlit elements with more advanced functionality. This is realized through additional function parameters and arguments."
+keywords = ["streamlit", "pimped", "pimp", "enhanced", "advanced", "database"]
+license = {file = "LICENSE"}
+readme = {file = "README.txt"}
